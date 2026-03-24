@@ -1,19 +1,20 @@
 {
   "expo": {
-    "name": "KuraCek",
+    "name": "Kura Çek",
     "slug": "KuraCek",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fizyoterapistmesutarslan.KuraCek"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +22,29 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.fizyoterapistmesutarslan.KuraCek",
+      "versionCode": 6,
+      "permissions": [
+        "VIBRATE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-4413683938790117~5199893291"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bec051b6-b332-438a-9a01-adce96219a8e"
+      }
     }
   }
 }
